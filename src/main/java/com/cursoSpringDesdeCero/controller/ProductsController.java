@@ -32,7 +32,7 @@ public class ProductsController {
 
     @PostMapping("/add")
     public ResponseEntity<?> create(@RequestBody Product product){
-
+        productService.create(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(product);
     }
 
