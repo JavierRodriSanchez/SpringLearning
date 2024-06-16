@@ -3,9 +3,10 @@ package com.cursoSpringDesdeCero.service;
 import com.cursoSpringDesdeCero.entities.Product;
 import com.cursoSpringDesdeCero.repository.ProductsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ProductServiceImpl implements ProductService{
     @Autowired
     ProductsRepository productsRepository;
